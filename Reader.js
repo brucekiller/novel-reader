@@ -1,3 +1,22 @@
+/* This script build by rollup. */
+(function (Vue) {
+'use strict';
+
+function __$styleInject( css ) {
+    if(!css) return ;
+
+    if(typeof(window) == 'undefined') return ;
+    let style = document.createElement('style');
+    style.setAttribute('media', 'screen');
+    style.setAttribute('class', 'noRemove');
+
+    style.innerHTML = css;
+    document.head.appendChild(style);
+    return css;
+}
+
+Vue = Vue && Vue.hasOwnProperty('default') ? Vue['default'] : Vue;
+
 // ==UserScript==
 // @id             mynovelreader@ywzhaiqi@gmail.com
 // @name           My Novel Reader
